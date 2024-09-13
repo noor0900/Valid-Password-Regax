@@ -6,7 +6,7 @@ document.getElementById('passwordForm').addEventListener('submit', function(e) {
     const successElement = document.getElementById('success');
   
     // Password validation regex:
-    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/;
+    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/g;
   
     if (passwordRegex.test(passwordInput)) {
       errorElement.style.display = 'none';
